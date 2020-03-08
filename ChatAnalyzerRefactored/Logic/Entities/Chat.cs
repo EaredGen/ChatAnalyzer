@@ -8,7 +8,7 @@ namespace ChatAnalyzer.Logic
 {
     class Chat
     {
-        public DateTime dateOfChat;
+        public DateTime dateOfChat; 
         public string loginOfEmployee;
         public string nameOfEmployee;
         public string numberOfCustomer;
