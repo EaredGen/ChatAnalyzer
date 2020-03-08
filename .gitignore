@@ -1,3 +1,8 @@
 .vs
+<<<<<<< HEAD
+ChatAnalyzerRefactored/bin
+ChatAnalyzerRefactored/obj
+=======
 ChatAnalyzer/bin
 ChatAnalyzer/obj
+>>>>>>> 4bb18a7f9ad143ef08537316ab9d044d8395ece2

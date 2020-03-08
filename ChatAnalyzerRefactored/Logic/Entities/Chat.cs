@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatAnalyzer
+namespace ChatAnalyzer.Logic
 {
     class Chat
     {
@@ -14,7 +14,7 @@ namespace ChatAnalyzer
         public string numberOfCustomer;
         public string historyOfChat;
 
-        public Chat(DateTime dateOfChat, string loginOfEmployee, 
+        public Chat(DateTime dateOfChat, string loginOfEmployee,
             string nameOfEmployee, string numberOfCustomer, string historyOfChat)
         {
             this.dateOfChat = dateOfChat;
@@ -24,5 +24,7 @@ namespace ChatAnalyzer
             this.historyOfChat = historyOfChat;
         }
 
+        public Chat() { }
+        
     }
 }

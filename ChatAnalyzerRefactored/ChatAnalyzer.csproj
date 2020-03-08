@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C34FA2E-82FF-4A31-8BCF-9C2524F306A7}</ProjectGuid>
+    <ProjectGuid>{8DE65386-A3D7-4447-A4C7-804FC90E7A7D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ChatAnalyzer</RootNamespace>
     <AssemblyName>ChatAnalyzer</AssemblyName>
@@ -46,18 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chat.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Message.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Logic\Entities\Chat.cs" />
+    <Compile Include="Logic\Entities\Message.cs" />
+    <Compile Include="Logic\Entities\OpenedExcel.cs" />
+    <Compile Include="Logic\OpeningExcelFile.cs" />
+    <Compile Include="Logic\Program.cs" />
+    <Compile Include="Logic\AnalysisExcelFile.cs" />
+    <Compile Include="Logic\Writer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
